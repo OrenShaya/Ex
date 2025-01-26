@@ -13,7 +13,7 @@ function drawSquareToFile(times = 500) {
     const str = getSquare(getRandomIntInclusive(3, 20))
     writeToFile(str)
         .then(() => {
-            setTimeout(() => drawSquareToFile(times-1), 200)
+            setTimeout(() => (times > 0) ? drawSquareToFile(times-1) : {}, 200)
         })
 }
 
