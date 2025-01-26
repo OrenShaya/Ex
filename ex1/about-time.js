@@ -1,5 +1,5 @@
-import fs from 'fs'
 import ms from 'ms'
+import fs from 'fs'
 
 const content = fs.readFileSync('./timestamp-data.txt', 'utf-8')
 
